@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_400"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/white"
+        android:hint="Email"
+        android:paddingVertical="8dp"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_email"
+        android:background="@color/white"
+        android:hint="Senha"
+        android:paddingVertical="8dp"
+        android:paddingLeft="8dp" />
+
+    <Button
+        android:id="@+id/button_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_password"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/gray_100"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:textColor="@color/green_400"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/text_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_signin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Ainda não é cadastrado? Cadastre-se!"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/image_support"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_support" />
+
+    <TextView
+        android:id="@+id/text_recovery_password"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@+id/image_support"
+        android:gravity="center"
+        android:text="Esqueceu sua senha?"
+        android:textColor="@color/gray_100"
+        android:textSize="16dp" />
+
+</RelativeLayout>
